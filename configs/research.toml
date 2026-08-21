@@ -1,0 +1,28 @@
+[research]
+seed = 7
+
+[data]
+exchange = "deribit"
+assets = ["BTC", "ETH"]
+start = "2020-03-01"
+end = "2026-08-01"
+interval_minutes = 15
+max_spread_fraction = 0.35
+min_days_to_expiry = 7.0
+max_days_to_expiry = 120.0
+
+[surface]
+min_quotes_per_expiry = 8
+log_moneyness_limit = 1.0
+robust_loss = "soft_l1"
+arbitrage_tolerance = 1e-8
+
+[backtest]
+entry_lag_minutes = 15
+holding_periods_minutes = [60, 240]
+signal_threshold = 1.5
+option_fee_rate = 0.0003
+perpetual_taker_fee_rate = 0.00035
+funding_rate_8h = 0.0
+max_gross_vega = 1000.0
+max_scenario_loss = 1000.0

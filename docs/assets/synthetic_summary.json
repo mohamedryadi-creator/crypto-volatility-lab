@@ -1,0 +1,115 @@
+{
+  "all_numerical_static_arbitrage_checks_pass": true,
+  "all_sufficient_no_arbitrage_checks_pass": true,
+  "backtest": {
+    "diagnostics": {
+      "accepted_signals": 1050,
+      "candidate_portfolios": 2,
+      "completed_trades": 4,
+      "market_snapshots": 40,
+      "rejected_signal_quotes": 0,
+      "risk_scaled_trades": 0,
+      "signal_snapshots_evaluated": 35,
+      "skip_counts": [
+        [
+          "no_exit_snapshot_for_horizon",
+          4
+        ],
+        [
+          "no_two_sided_signal_portfolio",
+          33
+        ]
+      ]
+    },
+    "performance": {
+      "1h": {
+        "annualization_periods_per_year": 365.0,
+        "annualized_sharpe": null,
+        "average_turnover": 217.89982423708523,
+        "day_clustered_mean_ci": [
+          -0.37507677681126095,
+          -0.37507677681126095
+        ],
+        "hit_rate": 0.0,
+        "max_drawdown": 0.37507677681126095,
+        "max_drawdown_duration": 1,
+        "mean_pnl": -0.37507677681126095,
+        "observation_unit": "utc_exit_day",
+        "observations": 1,
+        "probabilistic_sharpe": null,
+        "profit_factor": 0.0,
+        "total_pnl": -0.37507677681126095,
+        "total_turnover": 217.89982423708523,
+        "trade_count": 2,
+        "volatility": null
+      },
+      "4h": {
+        "annualization_periods_per_year": 365.0,
+        "annualized_sharpe": null,
+        "average_turnover": 217.84962773493743,
+        "day_clustered_mean_ci": [
+          -0.3783548755038057,
+          -0.3783548755038057
+        ],
+        "hit_rate": 0.0,
+        "max_drawdown": 0.3783548755038057,
+        "max_drawdown_duration": 1,
+        "mean_pnl": -0.3783548755038057,
+        "observation_unit": "utc_exit_day",
+        "observations": 1,
+        "probabilistic_sharpe": null,
+        "profit_factor": 0.0,
+        "total_pnl": -0.3783548755038057,
+        "total_turnover": 217.84962773493743,
+        "trade_count": 2,
+        "volatility": null
+      }
+    },
+    "pnl_attribution": {
+      "funding": 0.0,
+      "net": -0.7534316523150666,
+      "option": 1.830371095338909,
+      "option_fees": -0.6076434694685409,
+      "perpetual_fees": -0.13841763619988184,
+      "perpetual_hedge": -1.837741641985553
+    },
+    "trades": 4
+  },
+  "economic_claim": false,
+  "mean_ssvi_rmse_total_variance": 0.000296521165196125,
+  "model_price_midpoint_fallbacks": 442,
+  "numerical_static_arbitrage_audit": {
+    "all_passed": true,
+    "grid": {
+      "log_moneyness_max": 1.25,
+      "log_moneyness_min": -1.25,
+      "log_moneyness_nodes_per_maturity": 401,
+      "maturity_nodes_per_surface": 33
+    },
+    "minimums": {
+      "butterfly_g": 0.3488088788866136,
+      "calendar_total_variance_increment": 0.001822336479021261,
+      "price_convexity_margin": 1.477176423321912e-07
+    },
+    "surfaces_audited": 40,
+    "violations": {
+      "butterfly_violations": 0,
+      "calendar_violations": 0,
+      "price_convexity_violations": 0,
+      "price_monotonicity_violations": 0,
+      "price_negative_violations": 0,
+      "price_vertical_spread_violations": 0
+    }
+  },
+  "quotes": 1200,
+  "risk_neutral_density": {
+    "mean": 29933.69384361979,
+    "raw_mass": 0.9988020729235659,
+    "skewness": 1.1126186023197064,
+    "standard_deviation": 9435.680770281
+  },
+  "seed": 7,
+  "surface_calibrations": 40,
+  "surface_failures": 0,
+  "synthetic_demo": true
+}

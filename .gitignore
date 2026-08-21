@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+dist/
+build/
+
+# Market data and generated artifacts (never commit licensed raw data)
+data/raw/
+data/interim/
+data/processed/
+data/manifests/*.json
+reports/generated/
+*.parquet
+*.csv.gz
+
+# Local configuration
+.env
+.DS_Store
