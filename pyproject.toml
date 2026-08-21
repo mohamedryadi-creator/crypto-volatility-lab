@@ -35,6 +35,8 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
+  # NumPy 2.5 stubs use PEP 695 syntax even under a Python 3.11 mypy target.
+  "numpy<2.5",
   "mypy>=1.11",
   "pandas-stubs>=2.1",
   "pytest>=8.0",

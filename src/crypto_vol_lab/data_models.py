@@ -237,7 +237,7 @@ class QuoteSnapshot:
         }
         for name in float_names:
             value = values.get(name)
-            values[name] = None if value in (None, "") else float(value)
+            values[name] = None if value in (None, "") else float(str(value))
         return cls(**values)
 
 

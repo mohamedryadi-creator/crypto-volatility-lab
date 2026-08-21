@@ -33,6 +33,7 @@ _ASSET_PARAMETERS = {
         "strike_step": 50.0,
     },
 }
+_OPTION_TYPES: tuple[Literal["call", "put"], ...] = ("call", "put")
 
 
 def _normal_cdf(value: float) -> float:
@@ -244,7 +245,7 @@ def generate_synthetic_snapshots(
                 if maturity_years <= 0:
                     continue
                 for strike in strikes[asset]:
-                    for option_type in ("call", "put"):
+                    for option_type in _OPTION_TYPES:
                         usd_mark = _mixture_price(
                             spot,
                             strike,
